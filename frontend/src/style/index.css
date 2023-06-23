@@ -1,0 +1,119 @@
+.styleIconSideBar > p {
+  font-size: 10px;
+  color: white;
+  font-weight: 800;
+}
+.styleIconConten1 > p {
+  font-size: 30x;
+}
+
+.styleIconConten1 {
+  cursor: pointer;
+  flex-basis: 25%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 230px;
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0px 0px 9px 4px #d4d2f8;
+  border: none;
+}
+.styleIconConten1 div > p {
+  font-weight: 800;
+  color: #383576;
+  font-size: 24px;
+}
+.styleIconConten1 .mark1 {
+  width: 20px;
+  height: 20px;
+  background: yellow;
+  border-radius: 100%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.styleIconConten1 .mark2 {
+  width: 20px;
+  height: 20px;
+  background: red;
+  border-radius: 100%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.styleIconConten1 .mark3 {
+  width: 20px;
+  height: 20px;
+  background: green;
+  border-radius: 100%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.styleIconConten1 .mark4 {
+  width: 20px;
+  height: 20px;
+  background: blue;
+  border-radius: 100%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.styleList_sub {
+  min-height: 73px;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  padding: 0px 28px 0 33px;
+  box-shadow: 0px 0px 9px 4px #d4d2f8;
+}
+
+.styleList_sub2 {
+  height: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  column-gap: 25px;
+}
+.style_common {
+  display: flex;
+  box-shadow: 0px 0px 9px 4px #d4d2f8;
+  padding-top: 25px;
+  padding-left: 33px;
+  height: 138px;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+.style_common > :first-child {
+  font-size: 16px;
+  font-weight: 500;
+}
+.style_common > :last-child {
+  font-size: 30px;
+  font-weight: 800;
+}
+.style_button3 {
+  border-radius: 5px;
+  width: 55px;
+  height: 24px;
+  margin-right: 23px;
+  background-color: blue;
+  color: white;
+}
+.timeListContainer {
+  border: none;
+  max-height: 530px;
+
+  background: transparent;
+}
+.container {
+  color: #383576;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
