@@ -60,10 +60,10 @@ function App() {
       //   sau khi backend check hoạt động checkin, checkout nếu không bình thường  thì sẽ hiển thị thông báo lỗi
       if (
         response.data.message ===
-        "Error: Không thể thực hiện cùng một hành động hai lần liên tiếp"
+        "lỗi : Không thể thực hiện cùng một hành động hai lần liên tiếp"
       ) {
         alert(
-          "Error: Không thể thực hiện cùng một hành động hai lần liên tiếp"
+          "lỗi : Không thể thực hiện cùng một hành động hai lần liên tiếp"
         );
         return;
       }
