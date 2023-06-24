@@ -51,15 +51,25 @@ function App() {
       date: convertedDate,
     };
 
-    setListTimer((prevList) => [...prevList, newTimer]);
-
     // Gửi yêu cầu POST lên backend để gửi thời gian checkin, checkout và tổng thời gian làm việc
     try {
       const response = await axios.post(
         "http://localhost:8000/api/v1/data",
         newTimer
       );
+      //   sau khi backend check hoạt động checkin, checkout nếu không bình thường  thì sẽ hiển thị thông báo lỗi
+      if (
+        response.data.message ===
+        "Error: Không thể thực hiện cùng một hành động hai lần liên tiếp"
+      ) {
+        alert(
+          "Error: Không thể thực hiện cùng một hành động hai lần liên tiếp"
+        );
+        return;
+      }
       console.log("Dữ liệu đã được gửi lên backend:", response.data);
+      //  cập nhật lại danh sách checkin checkout sau mỗi lần gửi POST
+      setListTimer((prevList) => [...prevList, newTimer]);
     } catch (error) {
       console.error("Lỗi khi gửi yêu cầu POST tới backend:", error);
       // Xử lý lỗi nếu có
@@ -105,8 +115,6 @@ function App() {
 
     // code chỉ chạy khi ứng dụng khởi động, không phụ thuộc vào sự thay đổi của listTimer
   }, []);
-
-
 
   return (
     <div
