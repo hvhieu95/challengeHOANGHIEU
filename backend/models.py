@@ -1,5 +1,6 @@
 # Tạo model SQLAlchemy để đại diện cho dữ liệu checkin và checkout trong cơ sở dữ liệu
 # test
+#tung
 
 from sqlalchemy import Column, Integer, String, create_engine
 from sqlalchemy.orm import sessionmaker
