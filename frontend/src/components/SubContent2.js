@@ -1,5 +1,5 @@
 import * as React from "react";
-import moment from "moment";
+
 
 export function SubContent2({ totalWorkTime }) {
   if (typeof totalWorkTime === "undefined" || !totalWorkTime) {
